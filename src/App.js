@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
+import React, { Component } from "react";
+import { Provider } from "react-redux";
 
-import store from './store';
+import store from "./store";
 
-import TodoList from './TodoList';
-import Counter from './Counter';
+import TodoList from "./components/TodoList";
+import Counter from "./components/Counter";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
       <Provider store={store}>
         <div>
           <TodoList />
-        <Counter />
+          <Counter />
         </div>
       </Provider>
     );
